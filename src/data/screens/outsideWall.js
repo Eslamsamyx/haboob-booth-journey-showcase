@@ -24,7 +24,7 @@ export const outsideWallScreen = {
           description: 'Single slide looping continuously on the outdoor screen',
           duration: '30 seconds (continuous loop)',
           layout: 'text-over-visualization',
-          topText: ['Innovate.', 'Inspire.', 'Impact.'],
+          topText: ['Trust.', 'Secures.', 'Sustainability.'],
           visualization: 'Hub 3D visualization/walkthrough'
         }
       }

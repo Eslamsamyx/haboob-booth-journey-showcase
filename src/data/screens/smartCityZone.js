@@ -114,7 +114,7 @@ export const smartCityZoneScreen = {
 </ul>
 
 <h4 style="color: #059669; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Architecture</h4>
-<p style="margin-bottom: 1rem;">Security Cameras → Solutions by stc Cloud (Video Recorder, VMS Software, Video Intelligence Apps, Cloud Storage) → Field Sensors → Video Management System</p>
+<p style="margin-bottom: 1rem;">Security Cameras → Haboob Cloud (Video Recorder, VMS Software, Video Intelligence Apps, Cloud Storage) → Field Sensors → Video Management System</p>
 </div>`,
         image: images.E2
       }

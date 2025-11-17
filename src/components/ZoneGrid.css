@@ -1,6 +1,6 @@
 .zone-grid-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #00B27A 0%, #8EDD65 50%, #6FCFEB 100%);
   padding: 2rem;
 }
 
@@ -41,11 +41,32 @@
   border-left: 5px solid;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+/* Diagonal slash accent on zone cards */
+.zone-card::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 178, 122, 0.3) 50%, transparent 100%);
+  transform: rotate(-45deg);
+  top: 20px;
+  right: -20px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
 .zone-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.zone-card:hover::after {
+  opacity: 1;
 }
 
 .zone-card-header {
@@ -95,7 +116,7 @@
 }
 
 .explore-link {
-  color: #6366f1;
+  color: #00B27A;
   font-weight: 600;
   font-size: 0.95rem;
 }

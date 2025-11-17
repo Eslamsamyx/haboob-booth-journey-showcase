@@ -4,10 +4,31 @@
 
 .visitor-journey {
   min-height: 100vh;
-  background: linear-gradient(180deg, #0a0118 0%, #1a0a2e 50%, #0a0118 100%);
+  background: radial-gradient(ellipse at 20% 30%, rgba(0, 178, 122, 0.08) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 70%, rgba(142, 221, 101, 0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 50% 50%, rgba(0, 178, 122, 0.04) 0%, transparent 70%),
+              #000000;
+  background-size: 200% 200%, 180% 180%, 150% 150%, 100% 100%;
+  background-position: 0% 0%, 100% 100%, 50% 50%, 0% 0%;
+  animation: subtleGreenFlow 60s ease-in-out infinite;
   color: #ffffff;
   position: relative;
   overflow-x: hidden;
+}
+
+@keyframes subtleGreenFlow {
+  0%, 100% {
+    background-position: 0% 0%, 100% 100%, 50% 50%, 0% 0%;
+  }
+  25% {
+    background-position: 20% 10%, 80% 90%, 45% 55%, 0% 0%;
+  }
+  50% {
+    background-position: 10% 20%, 90% 80%, 55% 45%, 0% 0%;
+  }
+  75% {
+    background-position: 15% 15%, 85% 85%, 50% 50%, 0% 0%;
+  }
 }
 
 /* ====================================
@@ -21,6 +42,33 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+
+/* Large diagonal slash accents in hero */
+.journey-hero::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 6px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 178, 122, 0.2) 50%, transparent 100%);
+  transform: rotate(-45deg);
+  top: 15%;
+  left: -10%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.journey-hero::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 5px;
+  background: linear-gradient(90deg, transparent 0%, rgba(111, 207, 235, 0.15) 50%, transparent 100%);
+  transform: rotate(-45deg);
+  bottom: 20%;
+  right: -8%;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-content {
@@ -39,7 +87,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F59E0B 100%);
+  background: linear-gradient(135deg, #00B27A 0%, #8EDD65 50%, #6FCFEB 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -70,7 +118,7 @@
 .stat-number {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #8B5CF6, #EC4899);
+  background: linear-gradient(135deg, #00B27A, #8EDD65);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -89,7 +137,7 @@
 
 .scroll-icon {
   font-size: 2rem;
-  color: #8B5CF6;
+  color: #00B27A;
 }
 
 /* Hero Background Effects */
@@ -114,7 +162,7 @@
 .orb-1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #8B5CF6, transparent);
+  background: radial-gradient(circle, #00B27A, transparent);
   top: -10%;
   left: -10%;
   animation-delay: 0s;
@@ -123,7 +171,7 @@
 .orb-2 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, #EC4899, transparent);
+  background: radial-gradient(circle, #8EDD65, transparent);
   bottom: -10%;
   right: -10%;
   animation-delay: 3s;
@@ -132,7 +180,7 @@
 .orb-3 {
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, #F59E0B, transparent);
+  background: radial-gradient(circle, #6FCFEB, transparent);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -144,7 +192,7 @@
    ==================================== */
 
 .journey-phases {
-  padding: 6rem 2rem;
+  padding: 0 2rem 6rem;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -326,7 +374,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(180deg, #8B5CF6, #EC4899, #F59E0B);
+  background: linear-gradient(180deg, #00B27A, #8EDD65, #6FCFEB);
   border-radius: 2px;
   transition: height 0.3s ease;
 }
@@ -463,6 +511,25 @@
 
 .station-card:hover::before {
   opacity: 0.05;
+}
+
+/* Diagonal slash accent on station cards */
+.station-card::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, var(--station-color, rgba(0, 178, 122, 0.5)) 50%, transparent 100%);
+  transform: rotate(-45deg);
+  top: 10%;
+  right: -15%;
+  pointer-events: none;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.station-card:hover::after {
+  opacity: 0.6;
 }
 
 .station-card.expanded {
@@ -749,24 +816,24 @@
 }
 
 .cta-primary {
-  background: linear-gradient(135deg, #8B5CF6, #EC4899);
+  background: linear-gradient(135deg, #00B27A, #8EDD65);
   border: none;
   color: white;
 }
 
 .cta-primary:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 178, 122, 0.4);
 }
 
 .cta-secondary {
   background: transparent;
-  border: 2px solid #8B5CF6;
+  border: 2px solid #00B27A;
   color: white;
 }
 
 .cta-secondary:hover {
-  background: rgba(139, 92, 246, 0.1);
+  background: rgba(0, 178, 122, 0.1);
   transform: translateY(-4px);
 }
 
@@ -781,7 +848,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #8B5CF6, #EC4899);
+  background: linear-gradient(135deg, #00B27A, #8EDD65);
   border: none;
   color: white;
   font-size: 1.5rem;
@@ -797,7 +864,7 @@
 
 .back-to-top:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 40px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 178, 122, 0.5);
 }
 
 /* ====================================
@@ -1022,9 +1089,9 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(10, 1, 24, 0.95);
+    background: rgba(91, 93, 98, 0.95);
     backdrop-filter: blur(20px);
-    border-bottom: 2px solid var(--active-phase-color, #8B5CF6);
+    border-bottom: 2px solid var(--active-phase-color, #00B27A);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     animation: slideDown 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1047,7 +1114,7 @@
   .current-number {
     font-size: 2rem;
     font-weight: 700;
-    background: var(--active-phase-color, #8B5CF6);
+    background: var(--active-phase-color, #00B27A);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1076,7 +1143,7 @@
 
   .current-station-info p {
     font-size: 0.75rem;
-    color: var(--active-phase-color, #8B5CF6);
+    color: var(--active-phase-color, #00B27A);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0;
@@ -1086,7 +1153,7 @@
   .progress-percentage {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--active-phase-color, #8B5CF6);
+    color: var(--active-phase-color, #00B27A);
     min-width: 60px;
     text-align: right;
     animation: countUp 0.6s ease;
@@ -1101,7 +1168,7 @@
   .progress-bar-fill {
     height: 100%;
     transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 10px var(--active-phase-color, #8B5CF6);
+    box-shadow: 0 0 10px var(--active-phase-color, #00B27A);
   }
 
   /* Mobile Journey Timeline */
@@ -1194,15 +1261,10 @@
 
   /* Adjust main content for mobile timeline */
   .journey-timeline {
-    margin-left: 0;
+    margin-left: 70px;
     margin-top: 0;
-    padding: 2rem 1rem;
-    transition: margin-left 0.6s ease;
-  }
-
-  .mobile-journey-timeline.visible ~ .journey-phases ~ .journey-timeline,
-  .journey-timeline:has(+ *) {
-    margin-left: 60px;
+    padding: 2rem 1rem 2rem 0.5rem;
+    transition: margin-left 0.6s ease, padding 0.6s ease;
   }
 
   /* Enhanced Mobile Animations */
@@ -1216,6 +1278,11 @@
   .journey-station:nth-child(3) { animation-delay: 0.3s; }
 
   .station-number {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    top: -60px !important;
+    transform: translateX(-50%) !important;
     animation: stampIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     animation-fill-mode: backwards;
     animation-delay: 0.3s;

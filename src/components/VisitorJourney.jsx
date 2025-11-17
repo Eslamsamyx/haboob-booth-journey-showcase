@@ -107,7 +107,7 @@ const VisitorJourney = () => {
   const progressPercent = Math.round((completedCount / journeyStations.length) * 100);
 
   return (
-    <div className="visitor-journey" style={{ '--active-phase-color': currentStation?.color || '#8B5CF6' }}>
+    <div className="visitor-journey" style={{ '--active-phase-color': currentStation?.color || '#00B27A' }}>
       {/* Mobile Progress Header */}
       <div className="mobile-progress-header">
         <div className="progress-header-content">
@@ -184,10 +184,10 @@ const VisitorJourney = () => {
         <div className="hero-content">
           <h1 className="hero-title">
             Your Journey Through
-            <span className="gradient-text"> Innovation</span>
+            <span className="gradient-text"> Cybersecurity Excellence</span>
           </h1>
           <p className="hero-subtitle">
-            Experience the future of digital transformation at the STC Immersive Hub
+            Trust Secures Sustainability - Experience Haboob's comprehensive cybersecurity solutions at BlackHat 2025
           </p>
           <div className="hero-stats">
             <div className="hero-stat">

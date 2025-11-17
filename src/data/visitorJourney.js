@@ -2,359 +2,566 @@ import images from '../assets/images';
 import {
   HiSparkles,
   HiCursorArrowRays,
-  HiAcademicCap,
+  HiShieldCheck,
+  HiTrophy,
   HiRocketLaunch,
-  HiGlobeAlt,
   HiUserGroup,
-  HiCog6Tooth,
-  HiBriefcase
+  HiChatBubbleLeftRight,
+  HiCommandLine,
+  HiPresentationChartLine,
+  HiBriefcase,
+  HiBeaker,
+  HiNewspaper
 } from 'react-icons/hi2';
 
 export const journeyStations = [
+  // GROUND FLOOR - Visible from outside
   {
-    id: 'outside-wall',
+    id: 'outer-vip-lounge-display',
     order: 1,
     phase: 'attract',
-    title: 'Outside Wall',
-    subtitle: 'First Impressions',
-    emotionalGoal: 'Spark curiosity and create anticipation',
-    visitorState: 'Approaching the hub, seeing the vision',
-    location: 'External Entrance',
+    title: 'Outer VIP-Lounge Display',
+    subtitle: 'Transparent Screen Attraction',
+    emotionalGoal: 'Capture attention with cutting-edge transparent technology',
+    visitorState: 'Passing by booth, curiosity sparked',
+    location: 'Outside booth - VIP Lounge exterior',
     screens: [
       {
-        type: '55" Full HD',
+        type: 'Transparent display screen',
         quantity: 1,
         media: [
           {
             type: 'image',
-            url: '/mockups/Holobox/02/outer-screen-1.png',
-            caption: 'Innovate. Inspire. Impact.'
+            url: '/zones/outer-meeting-room.png',
+            caption: 'Transparent screen visible from outside booth'
           }
         ]
       }
     ],
     keyFeatures: [
-      'Innovate. Inspire. Impact.',
-      '3D hub visualization',
-      'Continuous welcome loop',
-      'Setting the tone for innovation'
+      'Visible from outside the booth',
+      'Transparent screen technology',
+      'Trust Secures Sustainability messaging',
+      'Continuous Haboob branding loop'
     ],
-    duration: '30 seconds',
-    color: '#5B21B6',
-    gradient: 'linear-gradient(135deg, #5B21B6 0%, #7C3AED 100%)',
-    image: images.outsideScreen,
+    duration: '2 minutes loop',
+    color: '#00B27A',
+    gradient: 'linear-gradient(135deg, #00B27A 0%, #8EDD65 100%)',
+    image: '/zones/outer-meeting-room.png',
     icon: HiSparkles,
-    description: 'Your journey begins here. A striking visual welcome that showcases our commitment to innovation and digital transformation.'
+    description: 'First visual attraction - transparent screen facing outward showcasing Haboob\'s cybersecurity leadership and Saudi innovation.'
   },
   {
-    id: 'entrance-holobox',
+    id: 'booth-screens-attraction',
     order: 2,
-    phase: 'engage',
-    title: 'Entrance Holobox',
-    subtitle: 'Immersive Welcome',
-    emotionalGoal: 'Wow factor through cutting-edge technology',
-    visitorState: 'Just entered, receptive and impressed',
-    location: 'Main Entrance Lobby',
+    phase: 'attract',
+    title: 'Booth Screens & Central Demo',
+    subtitle: 'Immersive Visual Experience',
+    emotionalGoal: 'Captivate with large-scale visual displays',
+    visitorState: 'Drawn in by stunning screen array',
+    location: 'Central booth area - highly visible',
     screens: [
       {
-        type: '86" Holographic Display',
+        type: 'Multiple large displays + central interactive demo',
+        quantity: 'Full booth coverage',
+        media: [
+          {
+            type: 'image',
+            url: '/zones/central-interactive-demo.png',
+            caption: 'Booth screens and central demo creating immersive attraction'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Large booth screens creating visual impact',
+      'Central interactive demo with anamorphic 3D',
+      'Continuous attraction in idle state',
+      'Engaging even when actively triggered',
+      'Visible from outside - draws visitors in'
+    ],
+    duration: 'Continuous visual attraction',
+    color: '#8B5CF6',
+    gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
+    image: '/zones/central-interactive-demo.png',
+    icon: HiCursorArrowRays,
+    description: 'Second visual attraction - the big booth screens combined with the central interactive demo create a stunning immersive display. Whether idle with looping content or actively demonstrating, these screens capture and hold visitor attention.'
+  },
+  {
+    id: 'reception-desk',
+    order: 3,
+    phase: 'attract',
+    title: 'Entrance & Welcome',
+    subtitle: 'Main Ground Floor Reception',
+    emotionalGoal: 'Create warm, professional first impression',
+    visitorState: 'Entering booth, being welcomed',
+    location: 'Main entrance - Ground floor',
+    screens: [
+      {
+        type: 'Reception desk with elegant design',
         quantity: 1,
         media: [
           {
             type: 'image',
-            url: '/mockups/Holobox/02/welcome-screen-1.png',
-            caption: 'Welcome idle screen - displays when not in use'
-          },
-          {
-            type: 'video',
-            url: '/mockups/Holobox/01/1 - Holobox 3D Cube.mp4',
-            caption: '3D object rotating and floating in holographic display - Option 1'
-          },
-          {
-            type: 'video',
-            url: '/mockups/Holobox/02/1 - Holobox 3D Cube 1.mp4',
-            caption: '3D object rotating and floating in holographic display - Option 2'
+            url: '/zones/reception-desk.png',
+            caption: 'Elegant reception desk welcoming visitors'
           }
-          // NOTE: This holobox will also feature:
-          // - Feedback application (to be implemented)
-          // - Welcome idle screen (as shown above)
-          // - Interactive 3D objects that rotate and float in the holographic space
-        ]
-      },
-      {
-        type: 'Surface Pro Tablet',
-        quantity: 1,
-        media: []
-        // NOTE: Control interface for the holographic display
-      }
-    ],
-    keyFeatures: [
-      '86" holographic 3D display',
-      'Interactive Surface Pro interface',
-      'Welcome to the future messaging',
-      '4K UHD holographic experience'
-    ],
-    duration: '20-30 seconds',
-    color: '#5B21B6',
-    gradient: 'linear-gradient(135deg, #6D28D9 0%, #8B5CF6 100%)',
-    image: images.E1,
-    icon: HiCursorArrowRays,
-    description: 'Step into the future with our stunning holographic display. Experience welcome messages that literally leap off the screen.'
-  },
-  {
-    id: 'sister-screens',
-    order: 3,
-    phase: 'establish',
-    title: 'Sister Companies',
-    subtitle: 'Our Global Ecosystem',
-    emotionalGoal: 'Establish credibility through our powerful ecosystem',
-    visitorState: 'Recognizing our comprehensive capabilities',
-    location: 'Ecosystem Showcase',
-    screens: [
-      {
-        type: '55" Full HD Display',
-        quantity: 2,
-        media: [
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-1.png', caption: 'Still Frame 1 - STC Sister Companies Joint Offering' },
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-2.png', caption: 'Still Frame 2 - STC Sister Companies Joint Offering' },
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-3.png', caption: 'Still Frame 3 - STC Sister Companies Joint Offering' },
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-4.png', caption: 'Still Frame 4 - STC Sister Companies Joint Offering' },
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-5.png', caption: 'Still Frame 5 - STC Sister Companies Joint Offering' },
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-6.png', caption: 'Still Frame 6 - STC Sister Companies Joint Offering' },
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-7.png', caption: 'Still Frame 7 - STC Sister Companies Joint Offering' },
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-8.png', caption: 'Still Frame 8 - STC Sister Companies Joint Offering' },
-          { type: 'image', url: '/mockups/SisterScreens/sisters-company-joint-offering-9.png', caption: 'Still Frame 9 - STC Sister Companies Joint Offering' }
         ]
       }
     ],
     keyFeatures: [
-      'Giza Systems - MEA\'s leading integrator (3000+ professionals)',
-      'Nile - Campus NaaS with Zero Trust (LEAP 2025)',
-      'AvidBeam - AI video analytics at scale',
-      'ARIA Technologies - Industrial robotics & automation',
-      'Devoteam ME - AI-driven consulting (#1 in KSA)',
-      'Upsource - Premier BPO (9000+ employees)',
-      'LABS - SAP Gold Partner across ME'
+      'Main entrance point',
+      'Elegant, welcoming design',
+      'Professional visitor greeting',
+      'First touchpoint for all guests',
+      'Information and orientation hub'
     ],
-    duration: '5-8 minutes',
-    color: '#7C3AED',
-    gradient: 'linear-gradient(135deg, #7C3AED 0%, #9333EA 100%)',
-    image: images.E3,
-    icon: HiGlobeAlt,
-    description: 'Meet our family of specialized companies. Seven world-class partners bringing end-to-end digital transformation capabilities.'
+    duration: '2-3 minutes',
+    color: '#F59E0B',
+    gradient: 'linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%)',
+    image: '/zones/reception-desk.png',
+    icon: HiUserGroup,
+    description: 'Reception desk - welcoming visitors with elegant design at the main ground floor entrance.'
   },
   {
-    id: 'future-partners',
+    id: 'ceremony-desk',
     order: 4,
-    phase: 'trust',
-    title: 'Strategic Partnerships',
-    subtitle: 'Global Innovation Leaders',
-    emotionalGoal: 'Build confidence through world-class alliances',
-    visitorState: 'Understanding our global credibility and connections',
-    location: 'Partnership Gallery',
+    phase: 'attract',
+    title: 'Partners Desk (Ceremony Desk)',
+    subtitle: 'Partnership & Collaboration Hub',
+    emotionalGoal: 'Foster strategic partnerships',
+    visitorState: 'Partner engagement, collaboration discussions',
+    location: 'Adjacent to reception - Ground floor',
     screens: [
       {
-        type: 'Multiple Interactive Displays',
-        media: []
+        type: 'Desk display',
+        quantity: 1,
+        media: [
+          {
+            type: 'image',
+            url: '/zones/ceremony-desk.png',
+            caption: 'Partners desk for collaboration and ceremonies'
+          }
+        ]
       }
     ],
     keyFeatures: [
-      'Huawei - Pioneering smart cities together',
-      'Microsoft, VMware, Dell - Cloud & infrastructure',
-      'NVIDIA - AI and Metropolis platform',
-      'Cognex - Machine vision & automation',
-      '170+ global and local technology partners'
+      'Partnership coordination',
+      'Strategic collaboration discussions',
+      'Ceremony and event handling',
+      'Partner onboarding',
+      'Alliance building hub'
     ],
     duration: '3-5 minutes',
     color: '#F59E0B',
     gradient: 'linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%)',
-    image: images.E5,
+    image: '/zones/ceremony-desk.png',
     icon: HiUserGroup,
-    description: 'See our strategic alliances with global tech giants. Together, we bring world-class innovation to Saudi Arabia.'
+    description: 'Partners desk (ceremony desk) - dedicated space for partnership discussions, strategic collaborations, and special ceremonies with Haboob partners.'
   },
   {
-    id: 'smart-city',
+    id: 'services-screens',
     order: 5,
     phase: 'experience',
-    title: 'Smart City Zone',
-    subtitle: 'See Innovation in Action',
-    emotionalGoal: 'Hands-on engagement with live, interactive demonstrations',
-    visitorState: 'Active exploration - touching, testing, experiencing',
-    location: 'Interactive Demo Area',
+    title: 'Services Screens',
+    subtitle: 'Solutions Showcase (Ground Floor)',
+    emotionalGoal: 'Demonstrate comprehensive capabilities',
+    visitorState: 'Informed, evaluating solutions',
+    location: 'Ground floor services area',
     screens: [
       {
-        type: 'Table Display (5x5 P1.25)',
-        resolution: '2400x1350',
+        type: 'Multiple displays',
+        quantity: 'Services zone',
         media: [
-          { type: 'video', url: '/mockups/SmartCity/4 - Smart City.mp4', caption: 'Smart City Interactive Demo' },
-          { type: 'image', url: '/mockups/SmartCity/smart-city-screen-01.png', caption: 'Still Frame 1 - Smart City Solutions' },
-          { type: 'image', url: '/mockups/SmartCity/smart-city-screen-02.png', caption: 'Still Frame 2 - Smart City Solutions' },
-          { type: 'image', url: '/mockups/SmartCity/smart-city-screen-03.png', caption: 'Still Frame 3 - Smart City Solutions' },
-          { type: 'image', url: '/mockups/SmartCity/smart-city-screen-04.png', caption: 'Still Frame 4 - Smart City Solutions' },
-          { type: 'image', url: '/mockups/SmartCity/smart-city-screen-05.png', caption: 'Still Frame 5 - Smart City Solutions' }
-        ]
-      },
-      {
-        type: 'Wall Screen (4x5 LED)',
-        resolution: '2400x1080',
-        media: []
-      },
-      {
-        type: 'Interactive Touchscreen',
-        size: '27"',
-        media: []
-      },
-      {
-        type: 'Side Displays',
-        size: '2x 55" Full HD',
-        media: []
-      }
-    ],
-    keyFeatures: [
-      'Smart Parking with AI (18,000+ cameras in Riyadh)',
-      'Smart Lighting & Energy (50-90% energy savings)',
-      'AI-Powered Surveillance & Safety',
-      'Crowd Intelligence with NVIDIA Metropolis',
-      'Traffic Management using deep learning',
-      '3D Digital Twin platform for urban planning'
-    ],
-    duration: '10-15 minutes',
-    color: '#059669',
-    gradient: 'linear-gradient(135deg, #059669 0%, #10B981 100%)',
-    image: images.E2,
-    icon: HiRocketLaunch,
-    description: 'Experience smart city solutions that are already transforming Saudi Arabia. Touch, interact, and see real deployments in action.'
-  },
-  {
-    id: 'aria-tech',
-    order: 6,
-    phase: 'specialize',
-    title: 'ARIA Technologies',
-    subtitle: 'Industry 4.0 Innovation',
-    emotionalGoal: 'Showcase specialized expertise in manufacturing',
-    visitorState: 'Experiencing industry-specific innovation',
-    location: 'Robotics & Automation Showcase',
-    screens: [
-      {
-        type: '27" Display',
-        quantity: 1,
-        media: [
-          { type: 'image', url: '/mockups/ARIA/ARIA_screen 1.png', caption: 'Slide 1 - ARIA Technologies' },
-          { type: 'image', url: '/mockups/ARIA/ARIA_screen 2.png', caption: 'Slide 2 - ARIA Technologies' },
-          { type: 'image', url: '/mockups/ARIA/ARIA_screen 3.png', caption: 'Slide 3 - ARIA Technologies' },
-          { type: 'image', url: '/mockups/ARIA/ARIA_screen 4.png', caption: 'Slide 4 - ARIA Technologies' },
-          { type: 'image', url: '/mockups/ARIA/ARIA_screen 5.png', caption: 'Slide 5 - ARIA Technologies' },
-          { type: 'image', url: '/mockups/ARIA/ARIA_screen 6.png', caption: 'Slide 6 - ARIA Technologies' }
+          {
+            type: 'image',
+            url: '/zones/services-screens.png',
+            caption: 'Services and solutions display'
+          }
         ]
       }
     ],
     keyFeatures: [
-      'Industrial robotics (Cartesian & P60 arms)',
-      'Machine vision with Cognex integration',
-      'Smart factory automation',
-      'Energy optimization solutions',
-      'Connected manufacturing with 5G edge computing'
-    ],
-    duration: '5-7 minutes',
-    color: '#0891B2',
-    gradient: 'linear-gradient(135deg, #0891B2 0%, #06B6D4 100%)',
-    image: images.ariaTechnology,
-    icon: HiCog6Tooth,
-    description: 'Witness the future of manufacturing. From robotics to AI-powered quality control, see Industry 4.0 in action.'
-  },
-  {
-    id: 'digital-wall',
-    order: 7,
-    phase: 'educate',
-    title: 'Solutions Wall',
-    subtitle: 'Our Story & Expertise',
-    emotionalGoal: 'Build trust and demonstrate 30 years of proven excellence',
-    visitorState: 'Learning mode - understanding our capabilities',
-    location: 'Main Exhibition Hall',
-    screens: [
-      {
-        type: '6x6 LED Wall (P0.9)',
-        resolution: '3840x2160',
-        size: '3600x1687.5mm',
-        media: [
-          { type: 'video', url: '/mockups/SolutionsWall/7 - Digital wall.mp4', caption: 'Digital Wall Demo - Part 1' },
-          { type: 'video', url: '/mockups/SolutionsWall/7 - Digital wall - 2.mp4', caption: 'Digital Wall Demo - Part 2' },
-          { type: 'video', url: '/mockups/SolutionsWall/7 - Digital wall - 3.mp4', caption: 'Digital Wall Demo - Part 3' },
-          { type: 'image', url: '/mockups/SolutionsWall/Solution-Wall-Controller.png', caption: 'Solutions Wall Controller Interface' }
-        ]
-      },
-      {
-        type: '30" OLED Control Panel',
-        resolution: '1366x768',
-        media: []
-      }
-    ],
-    keyFeatures: [
-      'Who we are - Saudi Arabia\'s #1 Digital Enabler',
-      '30-year timeline from 1995 to 2024',
-      'Success stories across industries',
-      'Value chain: Inspire → Engineer → Connect → Scale → Disrupt → Sustain',
-      '170+ global partnerships',
-      'Sister companies ecosystem'
+      'Full service portfolio',
+      'Cybersecurity solutions overview',
+      'Industry-specific offerings',
+      'Partnership capabilities'
     ],
     duration: '5-10 minutes',
-    color: '#8B5CF6',
-    gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%)',
-    image: images.E4,
-    icon: HiAcademicCap,
-    description: 'Discover our journey, our achievements, and the comprehensive solutions that power Vision 2030. From infrastructure to AI, we cover it all.'
+    color: '#14B8A6',
+    gradient: 'linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%)',
+    image: '/zones/services-screens.png',
+    icon: HiPresentationChartLine,
+    description: 'Comprehensive displays showcasing Haboob\'s complete range of cybersecurity services across government and private sectors.'
   },
   {
-    id: 'collaboration-room',
-    order: 8,
-    phase: 'collaborate',
-    title: 'Collaboration Room',
-    subtitle: 'Let\'s Build Together',
-    emotionalGoal: 'Transition from visitor to partner - ready for business',
-    visitorState: 'Engaged, ready to discuss opportunities',
-    location: 'Premium Meeting Space',
+    id: 'first-floor-activation',
+    order: 6,
+    phase: 'experience',
+    title: 'First Floor Activation',
+    subtitle: 'Interactive Engagement Zone',
+    emotionalGoal: 'Create memorable interactive moments',
+    visitorState: 'Active participation',
+    location: 'Ground floor activation area',
     screens: [
       {
-        type: '6x9 LED Wall',
-        resolution: '4320x1620',
-        size: '5400x2025mm',
+        type: 'Interactive displays',
+        quantity: 'First floor zone',
         media: [
-          { type: 'video', url: '/mockups/CollaborationRoom/8 - Collaboration room.mp4', caption: 'Collaboration Room Experience' }
+          {
+            type: 'image',
+            url: '/zones/first-floor-activation.png',
+            caption: 'Interactive activation zone'
+          }
         ]
       }
     ],
     keyFeatures: [
-      'Premium 6x9 LED wall for presentations',
-      'State-of-the-art collaboration technology',
-      'Perfect for client workshops and co-creation',
-      'Ready for your digital transformation journey'
+      'Gamified security awareness',
+      'Interactive challenges',
+      'Educational content',
+      'Engagement activities'
+    ],
+    duration: '10-15 minutes',
+    color: '#10B981',
+    gradient: 'linear-gradient(135deg, #10B981 0%, #34D399 100%)',
+    image: '/zones/first-floor-activation.png',
+    icon: HiUserGroup,
+    description: 'Engaging activation zone with interactive cybersecurity challenges and educational experiences.'
+  },
+  {
+    id: 'capture-the-flag',
+    order: 7,
+    phase: 'experience',
+    title: 'Capture the Flag',
+    subtitle: 'Cybersecurity Challenge (Ground Floor)',
+    emotionalGoal: 'Excitement through gamified learning',
+    visitorState: 'Engaged, competitive',
+    location: 'Ground floor challenge zone',
+    screens: [
+      {
+        type: 'Gaming displays',
+        quantity: 'Challenge zone',
+        media: [
+          {
+            type: 'image',
+            url: '/zones/capture-the-flag.png',
+            caption: 'CTF cybersecurity challenges'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Hands-on hacking challenges',
+      'Real-world security scenarios',
+      'Competitive gameplay',
+      'Skill-building exercises'
+    ],
+    duration: '15-30 minutes',
+    color: '#DC2626',
+    gradient: 'linear-gradient(135deg, #DC2626 0%, #EF4444 100%)',
+    image: '/zones/capture-the-flag.png',
+    icon: HiTrophy,
+    description: 'Test cybersecurity skills in our CTF competition - hands-on challenges demonstrating Haboob\'s expertise in security training.'
+  },
+  {
+    id: 'central-interactive-demo',
+    order: 8,
+    phase: 'attract',
+    title: 'Central Interactive Demo',
+    subtitle: 'Anamorphic 3D Centerpiece',
+    emotionalGoal: 'Wow visitors with stunning visual effects',
+    visitorState: 'Attracted by visuals, approaching booth',
+    location: 'Central area - visible from outside',
+    screens: [
+      {
+        type: 'Large interactive display',
+        quantity: 'Central zone',
+        media: [
+          {
+            type: 'image',
+            url: '/zones/central-interactive-demo.png',
+            caption: 'Anamorphic 3D videos and interactive demonstrations'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Anamorphic 3D video animations',
+      'Visible from outside booth',
+      'Idle mode: looping visual content',
+      'Active mode: hands-on demos',
+      'Eye-catching centerpiece'
+    ],
+    duration: 'Continuous loop / 10-15 min demos',
+    color: '#0EA5E9',
+    gradient: 'linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%)',
+    image: '/zones/central-interactive-demo.png',
+    icon: HiRocketLaunch,
+    description: 'The booth centerpiece - stunning anamorphic 3D videos attract attention when idle, transforming into interactive cybersecurity demonstrations during active sessions.'
+  },
+  {
+    id: 'coffee-zone',
+    order: 9,
+    phase: 'experience',
+    title: 'Coffee Zone',
+    subtitle: 'Refreshment & Networking Hub',
+    emotionalGoal: 'Create comfortable networking atmosphere',
+    visitorState: 'Relaxed, informal networking',
+    location: 'Ground floor - hospitality area',
+    screens: [
+      {
+        type: 'Coffee zone with branded elements',
+        quantity: 1,
+        media: [
+          {
+            type: 'image',
+            url: '/zones/coffee-zone.png',
+            caption: 'Coffee zone with barista space and branded amenities'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Professional barista space',
+      'Storage drawers for supplies',
+      'Power outlets for device charging',
+      'Haboob branded cups and materials',
+      'Comfortable networking area'
+    ],
+    duration: '5-15 minutes',
+    color: '#92400E',
+    gradient: 'linear-gradient(135deg, #92400E 0%, #B45309 100%)',
+    image: '/zones/coffee-zone.png',
+    icon: HiBeaker,
+    description: 'Coffee zone - a welcoming hospitality area featuring barista space, drawers, power outlets, and Haboob branded cups for comfortable networking and refreshment.'
+  },
+  {
+    id: 'visitors-lounge',
+    order: 10,
+    phase: 'experience',
+    title: 'Visitors Lounge',
+    subtitle: 'Relaxation & Social Hub',
+    emotionalGoal: 'Provide comfortable space for relaxation and informal discussions',
+    visitorState: 'Relaxed, casual networking',
+    location: 'Ground floor - lounge area',
+    screens: [
+      {
+        type: 'Lounge seating area',
+        quantity: 1,
+        media: [
+          {
+            type: 'image',
+            url: '/zones/visitors-lounge.png',
+            caption: 'Comfortable visitors lounge for relaxation'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Comfortable seating arrangements',
+      'Casual networking space',
+      'Relaxation area',
+      'Informal meeting point',
+      'Social interaction hub'
+    ],
+    duration: '10-20 minutes',
+    color: '#7C3AED',
+    gradient: 'linear-gradient(135deg, #7C3AED 0%, #A78BFA 100%)',
+    image: '/zones/visitors-lounge.png',
+    icon: HiUserGroup,
+    description: 'Visitors lounge - a comfortable relaxation and social hub providing casual seating for informal networking and discussions.'
+  },
+  // SECOND FLOOR - Private spaces
+  {
+    id: 'vip-lounge',
+    order: 11,
+    phase: 'engage',
+    title: 'VIP Lounge',
+    subtitle: 'Second Floor - Premium Guest Experience',
+    emotionalGoal: 'Create exclusivity and comfort',
+    visitorState: 'Relaxed, premium engagement',
+    location: 'Second floor VIP area',
+    screens: [
+      {
+        type: 'Multiple displays',
+        quantity: 'VIP area',
+        media: [
+          {
+            type: 'image',
+            url: '/zones/VIP-lounge.png',
+            caption: 'Exclusive VIP lounge on second floor'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Second floor premium space',
+      'Comfortable seating',
+      'Private consultations',
+      'Executive engagement'
+    ],
+    duration: '15-30 minutes',
+    color: '#9333EA',
+    gradient: 'linear-gradient(135deg, #9333EA 0%, #A855F7 100%)',
+    image: '/zones/VIP-lounge.png',
+    icon: HiShieldCheck,
+    description: 'Premium second-floor space for VIP guests - comfortable environment for executive-level cybersecurity consultations.'
+  },
+  {
+    id: 'meeting-room-screen-1',
+    order: 12,
+    phase: 'collaborate',
+    title: 'Meeting Room 1',
+    subtitle: 'Second Floor - Consultation Space',
+    emotionalGoal: 'Enable focused business discussions',
+    visitorState: 'Decision-making mode',
+    location: 'Second floor meeting room 1',
+    screens: [
+      {
+        type: 'Conference display',
+        quantity: 1,
+        media: [
+          {
+            type: 'image',
+            url: '/zones/meeting-room-screen-1.png',
+            caption: 'Conference room presentation display'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Second floor location',
+      'Private consultation space',
+      'Presentation mode capabilities',
+      'Idle branding when available'
     ],
     duration: '30-60 minutes',
-    color: '#EC4899',
-    gradient: 'linear-gradient(135deg, #EC4899 0%, #F472B6 100%)',
-    image: images.E7,
+    color: '#6366F1',
+    gradient: 'linear-gradient(135deg, #6366F1 0%, #818CF8 100%)',
+    image: '/zones/meeting-room-screen-1.png',
+    icon: HiChatBubbleLeftRight,
+    description: 'Second-floor meeting space for in-depth consultations. Screen shows Haboob branding when idle, switches to presentation mode when device is plugged in.'
+  },
+  {
+    id: 'meeting-room-screen-2',
+    order: 13,
+    phase: 'collaborate',
+    title: 'Meeting Room 2',
+    subtitle: 'Second Floor - Consultation Space',
+    emotionalGoal: 'Enable focused business discussions',
+    visitorState: 'Decision-making mode',
+    location: 'Second floor meeting room 2',
+    screens: [
+      {
+        type: 'Conference display',
+        quantity: 1,
+        media: [
+          {
+            type: 'image',
+            url: '/zones/meeting-room-screen-2.png',
+            caption: 'Conference room presentation display'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Second floor location',
+      'Parallel consultation capability',
+      'Presentation mode capabilities',
+      'Idle branding when available'
+    ],
+    duration: '30-60 minutes',
+    color: '#8B5CF6',
+    gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
+    image: '/zones/meeting-room-screen-2.png',
+    icon: HiChatBubbleLeftRight,
+    description: 'Second meeting space enabling parallel client engagements. Dual-mode display for idle branding and active presentations.'
+  },
+  {
+    id: 'brochure-stands',
+    order: 14,
+    phase: 'experience',
+    title: 'Brochure Stands',
+    subtitle: 'Strategically Placed Throughout the Booth',
+    emotionalGoal: 'Provide easy access to information materials',
+    visitorState: 'Information gathering, takeaway materials',
+    location: 'Multiple locations throughout booth',
+    screens: [
+      {
+        type: 'Information stands',
+        quantity: 'Multiple stands distributed',
+        media: [
+          {
+            type: 'image',
+            url: '/zones/Brochure-Stands.png',
+            caption: 'Brochure stands strategically placed throughout booth'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Multiple stands distributed throughout booth',
+      'Easy access to marketing materials',
+      'Haboob service brochures',
+      'Product information sheets',
+      'Strategic placement for maximum visibility'
+    ],
+    duration: '1-3 minutes',
+    color: '#059669',
+    gradient: 'linear-gradient(135deg, #059669 0%, #10B981 100%)',
+    image: '/zones/Brochure-Stands.png',
+    icon: HiNewspaper,
+    description: 'Brochure stands - strategically placed throughout the booth providing easy access to Haboob marketing materials, service brochures, and product information.'
+  },
+  {
+    id: 'hr-room',
+    order: 15,
+    phase: 'collaborate',
+    title: 'HR Room',
+    subtitle: 'Second Floor - Talent & Recruitment',
+    emotionalGoal: 'Attract top cybersecurity talent',
+    visitorState: 'Career-focused, exploring opportunities',
+    location: 'Second floor HR space',
+    screens: [
+      {
+        type: 'Display screen',
+        quantity: 1,
+        media: [
+          {
+            type: 'image',
+            url: '/zones/hr-room.png',
+            caption: 'HR and recruitment space'
+          }
+        ]
+      }
+    ],
+    keyFeatures: [
+      'Second floor location',
+      'Private recruitment interviews',
+      'Career opportunity presentations',
+      'Saudi talent development focus'
+    ],
+    duration: '20-45 minutes',
+    color: '#7C3AED',
+    gradient: 'linear-gradient(135deg, #7C3AED 0%, #A78BFA 100%)',
+    image: '/zones/hr-room.png',
     icon: HiBriefcase,
-    description: 'Your journey culminates here. A premium space where ideas become reality and partnerships are forged.'
+    description: 'Dedicated second-floor space for talent acquisition and recruitment - showcasing career opportunities with Saudi Arabia\'s leading cybersecurity company.'
   }
 ];
 
-export const journeyStats = {
-  totalScreens: 18,
-  totalZones: 8,
-  averageTime: '45-60 minutes',
-  interactiveExperiences: 6,
-  yearsFounded: 1995,
-  globalPartners: 170,
-  sisterCompanies: 7
-};
-
+// Journey phases that visitors experience
 export const journeyPhases = [
-  { id: 'attract', name: 'Attract', color: '#5B21B6', description: 'Capture attention and spark curiosity' },
-  { id: 'engage', name: 'Engage', color: '#6D28D9', description: 'Create wow moments with technology' },
-  { id: 'establish', name: 'Establish', color: '#7C3AED', description: 'Demonstrate comprehensive capabilities' },
-  { id: 'trust', name: 'Trust', color: '#F59E0B', description: 'Build confidence through partnerships' },
-  { id: 'experience', name: 'Experience', color: '#059669', description: 'Hands-on interaction with solutions' },
-  { id: 'specialize', name: 'Specialize', color: '#0891B2', description: 'Show deep industry expertise' },
-  { id: 'educate', name: 'Educate', color: '#8B5CF6', description: 'Share our story and values' },
-  { id: 'collaborate', name: 'Collaborate', color: '#EC4899', description: 'Work together and build the future' }
+  { id: 'attract', name: 'Attract', color: '#EC4899', description: 'Capture attention from outside the booth' },
+  { id: 'engage', name: 'Engage', color: '#9333EA', description: 'Create premium experiences on second floor' },
+  { id: 'experience', name: 'Experience', color: '#0EA5E9', description: 'Hands-on interaction on ground floor' },
+  { id: 'collaborate', name: 'Collaborate', color: '#6366F1', description: 'Private consultations on second floor' }
+];
+
+// Journey statistics
+export const journeyStats = [
+  { label: 'Total Stations', value: '15', icon: HiCommandLine },
+  { label: 'Average Time', value: '70-125 min', icon: HiRocketLaunch },
+  { label: 'Interactive Zones', value: '11', icon: HiUserGroup }
 ];

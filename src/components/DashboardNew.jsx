@@ -1,17 +1,20 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { Search, Monitor, Tv, Projector, Activity, X, Image, BookOpen, Sparkles, Wrench, Trophy, LayoutList, ChevronDown, ChevronUp, Calendar, Map } from 'lucide-react';
+import { Search, Monitor, Tv, Projector, Activity, X, Image, BookOpen, Sparkles, Wrench, Trophy, LayoutList, ChevronDown, ChevronUp, Map, Wifi, Flag, Users, Award, Zap, MessageSquare } from 'lucide-react';
 import { hubData, getAllTopics, getScreenById } from '../data/hubDataNew';
 import './Dashboard.css';
 
 const screenIcons = {
-  'outside-wall': Monitor,
-  'entrance-holobox': Projector,
-  'sister-screens': Tv,
-  'smart-city-zone': Activity,
-  'future-partners-screen': Monitor,
-  'digital-wall': Tv,
-  'collaboration-room': Monitor
+  'vip-lounge': Award,
+  'capture-the-flag': Flag,
+  'central-interactive-demo': Zap,
+  'ceremony-desk': Users,
+  'first-floor-activation': Activity,
+  'meeting-room-screen-1': Monitor,
+  'meeting-room-screen-2': Tv,
+  'outer-vip-lounge-display': Sparkles,
+  'services-screens': LayoutList,
+  'hr-room': Users
 };
 
 function Dashboard() {
@@ -131,17 +134,13 @@ function Dashboard() {
       <header className="dashboard-header">
         <div className="header-content">
           <div className="header-title">
-            <h1>STC Immersive Hub</h1>
+            <h1>Haboob Booth BlackHat 2025</h1>
             <p className="header-subtitle">Physical Screens & Content Management</p>
           </div>
           <div className="header-nav-buttons">
             <Link to="/journey" className="nav-button">
               <Map size={20} />
               Visitor Journey
-            </Link>
-            <Link to="/timeline" className="nav-button">
-              <Calendar size={20} />
-              Project Timeline
             </Link>
           </div>
         </div>

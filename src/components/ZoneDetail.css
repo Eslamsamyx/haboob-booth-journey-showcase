@@ -63,7 +63,7 @@
 }
 
 .badge {
-  background: #6366f1;
+  background: #00B27A;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -92,7 +92,7 @@
 .screen-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  border-color: #6366f1;
+  border-color: #00B27A;
 }
 
 .screen-type-badge {
@@ -106,13 +106,13 @@
 }
 
 .screen-type-badge[data-type="screen"] {
-  background: #dbeafe;
-  color: #1e40af;
+  background: #C7F9E3;
+  color: #047857;
 }
 
 .screen-type-badge[data-type="activation"] {
-  background: #fef3c7;
-  color: #92400e;
+  background: #D4F4F4;
+  color: #0D7C7C;
 }
 
 .screen-card h3 {
@@ -145,7 +145,7 @@
 }
 
 .view-details {
-  color: #6366f1;
+  color: #00B27A;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -156,12 +156,12 @@
 }
 
 .error-message h2 {
-  color: #dc2626;
+  color: #FF7F30;
   margin-bottom: 1rem;
 }
 
 .back-link {
-  color: #6366f1;
+  color: #00B27A;
   text-decoration: none;
   font-weight: 600;
 }

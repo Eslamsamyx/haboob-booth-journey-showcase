@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Home, Map, Calendar } from 'lucide-react';
+import { Home, Map } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -15,25 +15,9 @@ const Footer = () => {
             <Map size={18} />
             Visitor Journey
           </Link>
-          <Link to="/timeline" className="footer-nav-link">
-            <Calendar size={18} />
-            Project Timeline
-          </Link>
         </nav>
         <div className="footer-branding">
-          <span className="footer-text">Powered by</span>
-          <a
-            href="https://kayanlive.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer-logo-link"
-          >
-            <img
-              src="/kayanlive-logo.webp"
-              alt="Kayan Live"
-              className="footer-logo"
-            />
-          </a>
+          <span className="footer-text">Powered by ExpoStudios</span>
         </div>
       </div>
     </footer>

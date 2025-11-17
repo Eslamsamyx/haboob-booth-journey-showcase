@@ -34,9 +34,9 @@ export const sisterScreensScreen = {
 <p style="margin-bottom: 1rem;">Industry focus: Utilities (water/power), Oil & Gas, Telecom, Urban Communities/Smart Mobility, Manufacturing, Hospitality/Real Estate.</p>
 
 <h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Group context</h4>
-<p style="margin-bottom: 1rem;">solutions by stc acquired 88.19% of Giza Systems (and 34% of Giza Arabia) in Oct 2022; strategic expansion across MENA & Africa.</p>
+<p style="margin-bottom: 1rem;">Haboob acquired 88.19% of Giza Systems (and 34% of Giza Arabia) in Oct 2022; strategic expansion across MENA & Africa.</p>
 
-<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with solutions by stc</h4>
+<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with Haboob</h4>
 <ul style="margin-bottom: 1rem;">
 <li><strong>End-to-end smart city & utility modernization:</strong> stc connectivity/cloud + Giza OT/automation → digital twins, smart grid/water, city safety.</li>
 <li><strong>Telecom modernization:</strong> Giza OSS/BSS integration + solutions managed/cloud/cyber</li>
@@ -68,9 +68,9 @@ export const sisterScreensScreen = {
 <p style="margin-bottom: 1rem;">Industry focus: Universities/education, enterprise campuses (HQ/branch), healthcare, government & defense, manufacturing parks.</p>
 
 <h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Group context</h4>
-<p style="margin-bottom: 1rem;">solutions by stc announced a strategic JV with Nile in 2024; launched Nile MEA in 2025 to bring NaaS to KSA and the region.</p>
+<p style="margin-bottom: 1rem;">Haboob announced a strategic JV with Nile in 2024; launched Nile MEA in 2025 to bring NaaS to KSA and the region.</p>
 
-<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with solutions by stc</h4>
+<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with Haboob</h4>
 <p style="margin-bottom: 1rem;"><strong>Turnkey campus connectivity</strong> (NaaS + stc backhaul/edge/cloud + SOC) for giga-projects, universities, hospitals, airports.</p>
 
 <h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Public success highlights</h4>
@@ -96,7 +96,7 @@ export const sisterScreensScreen = {
 
 <p style="margin-bottom: 1rem;">Industry focus: Municipal smart city, transport/parking, retail/malls, critical facilities/campuses.</p>
 
-<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with solutions by stc</h4>
+<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with Haboob</h4>
 <p style="margin-bottom: 1rem;"><strong>City-scale analytics</strong> hosted on stc cloud with telco-grade connectivity + managed services; packaged with Giza Systems for field engineering/IoT integration.</p>
 
 <h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Public success highlights</h4>
@@ -128,9 +128,9 @@ export const sisterScreensScreen = {
 <p style="margin-bottom: 1rem;">Industry focus: Home appliances, FMCG, plastics & packaging, food & beverage, automotive, pharma, defense.</p>
 
 <h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Group context</h4>
-<p style="margin-bottom: 1rem;">solutions by stc (via Giza Systems) ARIA positioned as the group's robotics/industrial automation spearhead.</p>
+<p style="margin-bottom: 1rem;">Haboob (via Giza Systems) ARIA positioned as the group's robotics/industrial automation spearhead.</p>
 
-<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with solutions by stc</h4>
+<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with Haboob</h4>
 <p style="margin-bottom: 1rem;"><strong>Smart manufacturing:</strong> ARIA robotics + stc private 5G/edge/cloud + Giza OT → connected factories with predictive quality, OEE dashboards and energy savings.</p>
 
 <h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Public highlights</h4>
@@ -144,7 +144,7 @@ export const sisterScreensScreen = {
       name: 'Devoteam Middle East',
       type: 'content',
       content: {
-        title: 'Devoteam Middle East (40% owned by solutions by stc) <span style="font-size: 0.875rem; color: #9CA3AF; font-weight: 400; margin-left: 0.5rem;">(up to 25-30 seconds max)</span>',
+        title: 'Devoteam Middle East (40% owned by Haboob) <span style="font-size: 0.875rem; color: #9CA3AF; font-weight: 400; margin-left: 0.5rem;">(up to 25-30 seconds max)</span>',
         description: 'AI-driven tech consulting across Cloud, Cybersecurity, Data & AI',
         mediaType: 'consultation-showcase',
         explanation: `<div style="max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.8;">
@@ -157,9 +157,9 @@ export const sisterScreensScreen = {
 <p style="margin-bottom: 1rem;">Industry focus: Broad enterprise & public sector across KSA & GCC; ~750+ ME staff; repeatedly ranked #1 IT consulting in KSA by IDC/Consultancy-ME.</p>
 
 <h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Group context</h4>
-<p style="margin-bottom: 1rem;">solutions by stc completed 40% acquisition of Devoteam ME (Feb 4, 2024), valuing the unit at ~SAR 741.7m.</p>
+<p style="margin-bottom: 1rem;">Haboob completed 40% acquisition of Devoteam ME (Feb 4, 2024), valuing the unit at ~SAR 741.7m.</p>
 
-<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with solutions by stc</h4>
+<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with Haboob</h4>
 <ul style="margin-bottom: 1rem;">
 <li><strong>Cloud landing zones & data platforms</strong> on stc sovereign/enterprise cloud (AWS, Azure, Google, Oracle).</li>
 <li><strong>GenAI adoption roadmaps</strong> + responsible AI governance.</li>
@@ -189,7 +189,7 @@ export const sisterScreensScreen = {
 
 <p style="margin-bottom: 1rem;">Industry focus: Government, healthcare, telecom, BFSI, e-commerce, travel & hospitality, energy & utilities, retail, IT</p>
 
-<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with solutions by stc</h4>
+<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with Haboob</h4>
 <ul style="margin-bottom: 1rem;">
 <li><strong>Wrap managed CX & back-office</strong> (contact center, finance/HR/procurement shared services) around stc infrastructure + cyber.</li>
 </ul>
@@ -219,7 +219,7 @@ export const sisterScreensScreen = {
 
 <p style="margin-bottom: 1rem;">Industry focus: Energy & natural resources, government, manufacturing, wholesale & distribution, retail & restaurants, engineering & construction, professional services.</p>
 
-<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with solutions by stc</h4>
+<h4 style="color: #7C3AED; font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Joint offerings with Haboob</h4>
 <ul style="margin-bottom: 1rem;">
 <li><strong>SAP S/4 HANA transformations</strong> on stc sovereign/cloud + managed services + cyber.</li>
 <li><strong>Industry clouds</strong> (retail, utilities, logistics) delivered on stc backbone.</li>
@@ -259,7 +259,7 @@ export const sisterScreensScreen = {
       type: 'content',
       content: {
         title: 'Sister Companies and Joint Offerings <span style="font-size: 0.75rem; color: #9CA3AF; font-weight: 400; margin-left: 0.5rem;">(RAW Content - for context)</span>',
-        description: 'Integrated value proposition across the STC ecosystem',
+        description: 'Integrated value proposition across the Haboob ecosystem',
         mediaType: 'ecosystem-overview',
         explanation: `<div style="max-width: 900px; margin: 0 auto; padding: 2rem; line-height: 1.8;">
   <p style="margin-bottom: 2rem;">A core strength of Solutions by STC is its network of sister companies and strategic partners – specialized firms (many acquired or invested in by Solutions) that broaden the range of solutions and industry expertise available under the STC umbrella. In the context of the Innovation Lab, these sister companies demonstrate "world-class innovative capabilities" that, combined with Solutions by STC, create end-to-end technological possibilities. Below is an overview of each key subsidiary/affiliate, their offerings, industry focus, and any notable success stories:</p>

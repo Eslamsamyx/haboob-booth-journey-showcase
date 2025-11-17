@@ -16,10 +16,10 @@ export const futurePartnersScreenScreen = {
       name: 'Huawei Partnership',
       type: 'content',
       content: {
-        title: 'Huawei & Solutions by STC',
+        title: 'Huawei & Haboob',
         description: 'Pioneering smart cities together',
         mediaType: 'partnership-showcase',
-        explanation: 'Strategic partnership combining Huawei\'s global smart city leadership with STC\'s local expertise.',
+        explanation: 'Strategic partnership combining Huawei\'s global smart city leadership with Haboob\'s local expertise.',
         technicalSpecs: {
           agreement: 'MoU signed 2022',
           deployment: 'Eastern Province'

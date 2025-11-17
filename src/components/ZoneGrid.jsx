@@ -6,7 +6,7 @@ function ZoneGrid() {
   return (
     <div className="zone-grid-container">
       <header className="header">
-        <h1>STC Immersive Hub</h1>
+        <h1>Haboob Booth BlackHat 2025</h1>
         <p className="subtitle">Explore zones, screens, and activations</p>
       </header>
 

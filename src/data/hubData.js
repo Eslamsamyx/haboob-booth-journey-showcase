@@ -13,7 +13,7 @@ export const hubData = {
       id: 'entrance',
       name: 'Entrance & Welcome',
       description: 'Begin your journey through innovation',
-      color: '#5B21B6',
+      color: '#00B27A',
       icon: '🚪',
       screens: [
         {
@@ -48,7 +48,7 @@ export const hubData = {
             title: 'Interactive Holobox Experience',
             description: 'Holographic display with tablet interface',
             mediaType: 'holographic-display',
-            explanation: 'The entrance zone features an innovative Holobox that creates stunning holographic displays, controlled via an integrated Surface Pro tablet. This creates an immersive welcome experience showcasing STC\'s commitment to cutting-edge technology.',
+            explanation: 'The entrance zone features an innovative Holobox that creates stunning holographic displays, controlled via an integrated Surface Pro tablet. This creates an immersive welcome experience showcasing Haboob\'s commitment to cutting-edge technology.',
             features: [
               'Holographic 3D projections',
               'Surface Pro tablet control interface',
@@ -98,7 +98,7 @@ export const hubData = {
       id: 'sister-companies',
       name: 'Sister Companies',
       description: 'Discover our network of innovation partners powering end-to-end solutions',
-      color: '#DC2626',
+      color: '#8EDD65',
       icon: '🤝',
       screens: [
         {
@@ -120,7 +120,7 @@ export const hubData = {
               coverage: '25+ countries across MENA & Africa',
               workforce: '3000+ specialized professionals',
               industries: 'Utilities, Oil & Gas, Telecom, Manufacturing',
-              ownership: '88.19% owned by solutions by stc'
+              ownership: '88.19% owned by Haboob'
             },
             successStories: [
               'Smart grid implementations across utilities',
@@ -237,7 +237,7 @@ export const hubData = {
               workforce: '~750 Middle East staff',
               expertise: 'AWS/GCP/Azure, Cybersecurity, AI',
               recognition: '#1 IT consulting in KSA (IDC)',
-              ownership: '40% acquired by solutions by stc (Feb 2024)'
+              ownership: '40% acquired by Haboob (Feb 2024)'
             },
             successStories: [
               'Cloud landing zones on STC/hyperscaler clouds',
@@ -312,7 +312,7 @@ export const hubData = {
       id: 'smart-city',
       name: 'Smart City Showcase',
       description: 'AI-powered solutions transforming urban living and public spaces',
-      color: '#059669',
+      color: '#00B27A',
       icon: '🏙️',
       image: '/src/assets/images/E2.jpeg',
       screens: [
@@ -503,7 +503,7 @@ export const hubData = {
       id: 'future-partners',
       name: 'Future Tech Partners',
       description: 'Strategic partnerships driving innovation',
-      color: '#F59E0B',
+      color: '#FF7F30',
       icon: '🌐',
       image: '/src/assets/images/E3.jpeg',
       screens: [
@@ -512,10 +512,10 @@ export const hubData = {
           name: 'Huawei Partnership',
           type: 'screen',
           content: {
-            title: 'Huawei & Solutions by STC',
+            title: 'Huawei & Haboob',
             description: 'Pioneering smart cities together with global ICT leadership',
             mediaType: 'partnership-showcase',
-            explanation: 'Strategic partnership combining Huawei\'s global smart city and ICT solutions leadership with STC\'s local integration expertise to deliver world-class smart city experiences in Saudi Arabia.',
+            explanation: 'Strategic partnership combining Huawei\'s global smart city and ICT solutions leadership with Haboob\'s local integration expertise to deliver world-class smart city experiences in Saudi Arabia.',
             features: [
               'Smart city co-development',
               'Smart parking and lighting',
@@ -544,9 +544,9 @@ export const hubData = {
 
     {
       id: 'solutions-overview',
-      name: 'Solutions by STC',
+      name: 'Haboob Solutions',
       description: 'Saudi Arabia\'s #1 Digital Transformation Enabler',
-      color: '#8B5CF6',
+      color: '#6FCFEB',
       icon: '💎',
       image: '/src/assets/images/E4.jpeg',
       screens: [
@@ -556,7 +556,7 @@ export const hubData = {
           type: 'activation',
           content: {
             title: 'Digital Wall - Immersive Brand Experience',
-            description: 'Massive LED wall showcasing Solutions by STC capabilities',
+            description: 'Massive LED wall showcasing Haboob capabilities',
             mediaType: 'ultra-hd-video-wall',
             explanation: 'An impressive 6x6 LED display wall with ultra-high resolution provides an immersive brand experience. Visitors interact with a small touchscreen to control the content displayed on the massive wall, creating an engaging and memorable experience.',
             features: [
@@ -586,7 +586,7 @@ export const hubData = {
             title: 'Collaboration Room - Interactive Meeting Space',
             description: 'State-of-the-art collaboration space with massive display wall',
             mediaType: 'collaboration-space',
-            explanation: 'A premium collaboration room featuring a massive 6x9 LED display wall for presentations, video conferences, and collaborative work sessions. The room demonstrates Solutions by STC\'s capabilities in creating modern, technology-enabled workspaces.',
+            explanation: 'A premium collaboration room featuring a massive 6x9 LED display wall for presentations, video conferences, and collaborative work sessions. The room demonstrates Haboob\'s capabilities in creating modern, technology-enabled workspaces.',
             features: [
               'Massive 6x9 LED video wall',
               'Ultra-wide format presentations',
@@ -611,10 +611,10 @@ export const hubData = {
           name: 'Who We Are',
           type: 'screen',
           content: {
-            title: 'Solutions by STC - Digital Transformation Enabler',
+            title: 'Haboob - Digital Transformation Enabler',
             description: 'Powering Vision 2030 with end-to-end ICT, Cloud, AI, Cybersecurity, and Smart City solutions',
             mediaType: 'company-overview',
-            explanation: 'With 25+ years of ICT excellence, 170+ global partners, and hundreds of enterprises served, Solutions by STC is Saudi Arabia\'s premier digital transformation partner.',
+            explanation: 'With 25+ years of ICT excellence, 170+ global partners, and hundreds of enterprises served, Haboob is Saudi Arabia\'s premier digital transformation partner.',
             features: [
               '25+ years driving ICT excellence',
               '170+ global & local partners',
@@ -647,7 +647,7 @@ export const hubData = {
               { year: 2015, event: 'Offering cloud technologies' },
               { year: 2017, event: 'Satellite communications & cybersecurity launch' },
               { year: 2018, event: 'Digital applications & data analytics capabilities' },
-              { year: 2019, event: 'solutions by stc new brand identity' },
+              { year: 2019, event: 'Haboob new brand identity' },
               { year: 2021, event: 'Listed on Saudi stock market' },
               { year: 2022, event: 'Acquires Giza Systems (88.19%)' },
               { year: 2023, event: 'Acquires CCC, invests in Nile, partnership with SingleStore' },

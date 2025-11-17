@@ -1,33 +1,36 @@
 // Import screen components
-import { outsideWallScreen } from './screens/outsideWall.js';
-import { entranceHoloboxScreen } from './screens/entranceHolobox.js';
-import { sisterScreensScreen } from './screens/sisterScreens.js';
-import { smartCityZoneScreen } from './screens/smartCityZone.js';
-import { futurePartnersScreenScreen } from './screens/futurePartnersScreen.js';
-import { digitalWallScreen } from './screens/digitalWall.js';
-import { ariaTechnologyScreen } from './screens/ariaTechnology.js';
-import { collaborationRoomScreen } from './screens/collaborationRoom.js';
+import { vipLoungeScreen } from './screens/vipLounge.js';
+import { captureTheFlagScreen } from './screens/captureTheFlag.js';
+import { centralInteractiveDemoScreen } from './screens/centralInteractiveDemo.js';
+import { ceremonyDeskScreen } from './screens/ceremonyDesk.js';
+import { firstFloorActivationScreen } from './screens/firstFloorActivation.js';
+import { meetingRoomScreen1, meetingRoomScreen2 } from './screens/meetingRoomScreens.js';
+import { outerVIPLoungeDisplayScreen } from './screens/outerMeetingRoom.js';
+import { servicesScreensScreen } from './screens/servicesScreens.js';
+import { hrRoomScreen } from './screens/hrRoom.js';
 
 export const hubData = {
   entrance: {
-    quote: "Innovate. Inspire. Impact.",
+    quote: "Trust Secures Sustainability",
     welcomeMessages: [
-      "Welcome to the Future — Powered by Innovation",
-      "Welcome to solutions immersive hub, where innovation meets possibility"
+      "One Stop Shop For Cybersecurity Services and Solutions",
+      "Professional cybersecurity powered by a Saudi team and cutting-edge technologies"
     ],
-    ceoMessage: "Innovation is about solving real-world challenges. We're proud to deliver futuristic solutions that make a visible difference, improving how businesses operate, serve their customers, and grow sustainably."
+    ceoMessage: "Haboob ensures business continuity and security through advanced services and solutions, safeguarding your assets and empowering a resilient digital future. As Saudi Arabia's leading cybersecurity company, we're proud to protect what matters most."
   },
 
   // Physical screens in the hub
   screens: [
-    outsideWallScreen,
-    entranceHoloboxScreen,
-    sisterScreensScreen,
-    smartCityZoneScreen,
-    futurePartnersScreenScreen,
-    digitalWallScreen,
-    ariaTechnologyScreen,
-    collaborationRoomScreen
+    outerVIPLoungeDisplayScreen,
+    centralInteractiveDemoScreen,
+    ceremonyDeskScreen,
+    captureTheFlagScreen,
+    servicesScreensScreen,
+    firstFloorActivationScreen,
+    vipLoungeScreen,
+    meetingRoomScreen1,
+    meetingRoomScreen2,
+    hrRoomScreen
   ]
 };
 

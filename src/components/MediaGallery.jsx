@@ -175,7 +175,7 @@ const MediaGallery = ({ screens }) => {
             border: '3px solid rgba(255, 255, 255, 0.2)',
           },
           thumbnailActive: {
-            border: `4px solid var(--station-color, #8B5CF6)`,
+            border: `4px solid var(--station-color, #00B27A)`,
           },
         }}
         on={{
