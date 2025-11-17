@@ -17,7 +17,7 @@ const Footer = () => {
           </Link>
         </nav>
         <div className="footer-branding">
-          <span className="footer-text">Powered by ExpoStudios</span>
+          <span className="footer-text">Powered by KayanLive</span>
         </div>
       </div>
     </footer>
